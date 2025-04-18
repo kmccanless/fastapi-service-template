@@ -1,0 +1,21 @@
+_min_copier_version: "8.0"
+
+project_name:
+  type: str
+  help: "Your service's full name"
+  default: "My FastAPI Microservice"
+
+project_slug:
+  type: str
+  help: "A valid Python package name (e.g. no spaces)"
+  default: "fastapi_service"
+
+description:
+  type: str
+  help: "Short project description"
+  default: "A FastAPI microservice."
+
+python_version:
+  type: str
+  help: "Python version to use"
+  default: "3.11.8"
