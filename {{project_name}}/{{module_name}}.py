@@ -1,1 +1,1 @@
-print("Hello from {{module_name}}!")
+print("{{module_name}} say Hello!")
