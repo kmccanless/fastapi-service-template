@@ -2,27 +2,63 @@
 
 {{ description }}
 
-## 🚀 Getting Started
+## 🧰 Developer Setup Instructions
 
-### Prerequisites
-Install [mise](https://mise.jdx.dev):
+### 1. Install mise (Tool Version Manager)
 ```bash
 curl https://mise.run | bash
 ```
+Follow the prompt to add it to your shell profile (e.g. `~/.zshrc` or `~/.bashrc`).
 
-### Setup
+### 2. Clone This Template Repo (Optional)
+You can explore this template locally, but **do not modify `copier.yaml`**.
+Instead, use it to generate a new service project.
+
+### 3. Scaffold a New FastAPI Microservice
+```bash
+copier copy gh:your-org/fastapi-service-template my-new-service
+cd my-new-service
+```
+Copier will prompt you for:
+- Project name
+- Python version
+- Description
+
+### 4. Install All Required Tools
 ```bash
 mise install
+```
+This installs the exact versions of Python, Poetry, Copier, and Pre-commit.
+
+### 5. Install Dependencies and Enable Git Hooks
+```bash
 poetry install
 pre-commit install
-docker-compose up
 ```
 
-### Development
-- Edit your app in the `app/` folder
-- Your FastAPI app runs on http://localhost:8000
+### 6. Start the Application
+```bash
+docker-compose up
+```
+Visit: [http://localhost:8000](http://localhost:8000)
 
-## 🔁 Update Template
+### 7. Run Tests
+```bash
+pytest
+```
+
+### 8. Push to GitHub
+```bash
+git init
+git remote add origin git@github.com:your-org/my-new-service.git
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+```
+
+### 9. Update from Template Later
+When the base template improves:
 ```bash
 copier update
 ```
+It will re-apply updates and let you choose what to overwrite.
