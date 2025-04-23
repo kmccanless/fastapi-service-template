@@ -1,5 +1,5 @@
 _min_copier_version: "9.2.0"
-_folder_name: fastapi-service-template
+_folder_name: fastapi-service-copy
 
 project_name:
   type: str
