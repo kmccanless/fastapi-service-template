@@ -32,14 +32,16 @@ _exclude:
   - poetry.lock
 
 _tasks:
-  - "chmod +x mise.sh"
+  - "chmod +x mise.sh bootstrap.sh"
   - "./mise.sh"
   - "mise install"
-  - "poetry install"
-  - "pre-commit install"
-  - "git init"
-  - "git add ."
-  - "git commit -m 'Initial commit'"
-  - "git branch -M main"
-  - "chmod +x debug.sh start.sh"
+  - "./bootstrap.sh"
+  # - "poetry env use python{{ python_version }}"
+  # - "poetry install"
+  # - "pre-commit install"
+  # - "git init"
+  # - "git add ."
+  # - "git commit -m 'Initial commit'"
+  # - "git branch -M main"
+  # - "chmod +x debug.sh start.sh"
 
