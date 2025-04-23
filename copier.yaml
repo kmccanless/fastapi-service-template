@@ -31,7 +31,7 @@ _exclude:
   - README.md
   - poetry.lock
 
-tasks:
+_tasks:
   - "chmod +x mise.sh"
   - "./mise.sh"
   - "mise install"
