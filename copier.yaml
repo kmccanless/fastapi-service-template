@@ -1,5 +1,5 @@
 _min_copier_version: "9.2.0"
-_answers_file: .copier-answers.yml
+_answers_file: .answers.yml
 
 project_name:
   type: str
