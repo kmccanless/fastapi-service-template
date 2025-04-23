@@ -29,3 +29,17 @@ _exclude:
   - .git
   - CHANGELOG.md
   - README.md
+  - poetry.lock
+
+tasks:
+  - "chmod +x mise.sh"
+  - "./mise.sh"
+  - "mise install"
+  - "poetry install"
+  - "pre-commit install"
+  - "git init"
+  - "git add ."
+  - "git commit -m 'Initial commit'"
+  - "git branch -M main"
+  - "chmod +x debug.sh start.sh"
+
