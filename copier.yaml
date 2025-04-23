@@ -32,7 +32,7 @@ _exclude:
   - poetry.lock
 
 _tasks:
-  - "chmod +x mise.sh bootstrap.sh"
+  - "chmod +x mise.sh ./scripts/bootstrap.sh"
   - "./mise.sh"
   - "mise install"
   - "./bootstrap.sh"
