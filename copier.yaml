@@ -35,7 +35,7 @@ _tasks:
   - "chmod +x mise.sh ./scripts/bootstrap.sh"
   - "./mise.sh"
   - "mise install"
-  - "./bootstrap.sh"
+  - "./scripts/bootstrap.sh"
   # - "poetry env use python{{ python_version }}"
   # - "poetry install"
   # - "pre-commit install"
