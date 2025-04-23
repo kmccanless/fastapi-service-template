@@ -3,7 +3,8 @@
 set -e
 
 mise install
-poetry env use python{{ python_version }}
+poetry config virtualenvs.create true --local
+poetry env use {{ python_version }}
 poetry install
 pre-commit install
 
