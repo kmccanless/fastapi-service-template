@@ -14,11 +14,7 @@ function check_mise_installed() {
 
 # Function to install mise via Homebrew
 function install_mise() {
-    echo "🛠️ Installing mise using Homebrew..."
-    if ! command -v brew >/dev/null 2>&1; then
-        echo "🚨 Homebrew not found. Please install Homebrew first: https://brew.sh/"
-        exit 1
-    fi
+    echo "🛠️ Installing mise ..."
     curl https://mise.run | sh
 }
 
