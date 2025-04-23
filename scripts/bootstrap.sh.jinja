@@ -6,8 +6,8 @@ mise install
 poetry config virtualenvs.create true --local
 poetry env use {{ python_version }}
 poetry install
-# pre-commit install
 
+pre-commit install
 
 echo "Initializing git repo..."
 git init
