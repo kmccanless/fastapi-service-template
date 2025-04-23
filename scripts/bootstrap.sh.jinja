@@ -3,9 +3,9 @@
 set -e
 
 mise install
-# poetry env use python{{ python_version }}
-# poetry install
-# pre-commit install
+poetry env use python{{ python_version }}
+poetry install
+pre-commit install
 
 
 # echo "Initializing git repo..."
