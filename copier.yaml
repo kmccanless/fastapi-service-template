@@ -1,4 +1,5 @@
 _min_copier_version: "9.2.0"
+_folder_name: "{{ project_slug }}"
 
 project_name:
   type: str
