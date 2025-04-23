@@ -1,6 +1,3 @@
-_min_copier_version: "9.2.0"
-_answers_file: .answers.yml
-
 project_name:
   type: str
   help: "Your service's full name"
@@ -25,3 +22,10 @@ module_name:
   type: str
   help: "Python module name"
   default: "app"
+
+_exclude:
+  - copier.yaml
+  - __pycache__
+  - .git
+  - CHANGELOG.md
+  - README.md
